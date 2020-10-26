@@ -63,6 +63,24 @@ functions:
           path: /api/player/{id}
           method: get
 
+  updatePlayerById:
+    handler: src/updatePlayerById/handler.updatePlayerById
+    layers:
+      - !GetAtt Deno.Outputs.LayerArn
+    events:
+      - http:
+          path: /api/player/{id}
+          method: patch
+
+  deletePlayerById:
+    handler: src/deletePlayerById/handler.deletePlayerById
+    layers:
+      - !GetAtt Deno.Outputs.LayerArn
+    events:
+      - http:
+          path: /api/player/{id}
+          method: delete
+
 resources:
   Transform: AWS::Serverless-2016-10-31
   Resources:

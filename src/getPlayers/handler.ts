@@ -8,11 +8,7 @@ export const getPlayers = async (event: APIGatewayProxyEvent) => {
 
   let playersList: any[] = [];
   if (result) {
-    for (let index = 0; index < result.length; index++) {
-      const item = result[index];
-      const items = item.Items;
-      playersList.push(items);
-    }
+    playersList = result.Items;
 
     response = {
       statusCode: 200,

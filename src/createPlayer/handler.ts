@@ -27,7 +27,7 @@ export const createPlayer = async (event: APIGatewayProxyEvent) => {
       response = {
         statusCode: 200,
         body: JSON.stringify({
-          message: "deno-serverless api",
+          message: "createPlayer",
           id: id,
         }),
       };
