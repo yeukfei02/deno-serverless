@@ -1,0 +1,97 @@
+service: deno-serverless
+
+frameworkVersion: '2'
+
+provider:
+  name: aws
+  runtime: provided
+  stage: v1
+  region: ap-southeast-1
+  iamRoleStatements:
+    - Effect: "Allow"
+      Action:
+        - dynamodb:CreateTable
+        - dynamodb:Query
+        - dynamodb:Scan
+        - dynamodb:PutItem
+        - dynamodb:GetItem
+        - dynamodb:UpdateItem
+        - dynamodb:DeleteItem
+      Resource:
+        - Fn::GetAtt: [playersTable, Arn]
+
+package:
+  exclude:
+    - .deno_dir/gen/file
+    - node_modules
+    - package-lock.json
+    - yarn.lock
+
+functions:
+  main:
+    handler: src/main/handler.main
+    layers:
+      - !GetAtt Deno.Outputs.LayerArn
+    events:
+      - http:
+          path: /api
+          method: get
+  
+  createPlayer:
+    handler: src/createPlayer/handler.createPlayer
+    layers:
+      - !GetAtt Deno.Outputs.LayerArn
+    events:
+      - http:
+          path: /api/player
+          method: post
+
+  getPlayers:
+    handler: src/getPlayers/handler.getPlayers
+    layers:
+      - !GetAtt Deno.Outputs.LayerArn
+    events:
+      - http:
+          path: /api/player
+          method: get
+  
+  getPlayerById:
+    handler: src/getPlayerById/handler.getPlayerById
+    layers:
+      - !GetAtt Deno.Outputs.LayerArn
+    events:
+      - http:
+          path: /api/player/{id}
+          method: get
+
+resources:
+  Transform: AWS::Serverless-2016-10-31
+  Resources:
+    Deno:
+      Type: AWS::Serverless::Application
+      Properties:
+        Location:
+          ApplicationId: arn:aws:serverlessrepo:us-east-1:390065572566:applications/deno
+          SemanticVersion: 1.4.6
+    
+    playersTable:
+      Type: AWS::DynamoDB::Table
+      Properties:
+        TableName: Players
+        AttributeDefinitions:
+          - AttributeName: id
+            AttributeType: S
+        KeySchema:
+          - AttributeName: id
+            KeyType: HASH
+        ProvisionedThroughput:
+          ReadCapacityUnits: 1
+          WriteCapacityUnits: 1
+
+plugins:
+  - serverless-plugin-split-stacks
+  - serverless-scriptable-plugin
+
+custom:
+  scriptHooks:
+    before:package:createDeploymentArtifacts: DENO_DIR=.deno_dir deno cache src/**/*.ts && cp -R .deno_dir/gen/file/$PWD/ .deno_dir/LAMBDA_TASK_ROOT
