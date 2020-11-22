@@ -15,7 +15,7 @@ export const getPlayerById = async (event: APIGatewayProxyEvent) => {
       statusCode: 200,
       body: JSON.stringify({
         message: "getPlayerById",
-        player: player,
+        player: player.Item,
       }),
     };
   }
