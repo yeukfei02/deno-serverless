@@ -11,13 +11,17 @@ export const getPlayerById = async (event: APIGatewayProxyEvent) => {
       player = await getPlayerByIdModel(id);
     }
 
-    response = {
-      statusCode: 200,
-      body: JSON.stringify({
-        message: "getPlayerById",
-        player: player.Item,
-      }),
-    };
+    if (player) {
+      if (player.Item) {
+        response = {
+          statusCode: 200,
+          body: JSON.stringify({
+            message: "getPlayerById",
+            player: player.Item,
+          }),
+        };
+      }
+    }
   }
 
   return response;
