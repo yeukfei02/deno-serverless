@@ -1,0 +1,585 @@
+{
+	"info": {
+		"_postman_id": "fcaa0ff8-a85f-4291-8007-54d4a560e5f9",
+		"name": "deno-serverless",
+		"description": "deno-serverless",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "player",
+			"item": [
+				{
+					"name": "/player",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"playerName\": \"test\",\n    \"points\": 100\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{rootUrl}}/player",
+							"host": [
+								"{{rootUrl}}"
+							],
+							"path": [
+								"player"
+							]
+						},
+						"description": "/player"
+					},
+					"response": [
+						{
+							"name": "/player",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"playerName\": \"test\",\n    \"points\": 100\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://2qa6k795bg.execute-api.ap-southeast-1.amazonaws.com/v1/api/player",
+									"protocol": "https",
+									"host": [
+										"2qa6k795bg",
+										"execute-api",
+										"ap-southeast-1",
+										"amazonaws",
+										"com"
+									],
+									"path": [
+										"v1",
+										"api",
+										"player"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "70"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 26 Oct 2020 09:21:13 GMT"
+								},
+								{
+									"key": "x-amzn-RequestId",
+									"value": "b8cbf3d5-f776-4ed2-a380-506adec6fe8c"
+								},
+								{
+									"key": "x-amz-apigw-id",
+									"value": "VAw49HSYSQ0FZpA="
+								},
+								{
+									"key": "X-Amzn-Trace-Id",
+									"value": "Root=1-5f969506-4aed20d00aa75ed0655bb43b;Sampled=0"
+								},
+								{
+									"key": "X-Cache",
+									"value": "Miss from cloudfront"
+								},
+								{
+									"key": "Via",
+									"value": "1.1 1969b693060171ec284d3d0f19afb534.cloudfront.net (CloudFront)"
+								},
+								{
+									"key": "X-Amz-Cf-Pop",
+									"value": "HKG62-C2"
+								},
+								{
+									"key": "X-Amz-Cf-Id",
+									"value": "LxovV-VLL1SDDw2cC3rx6TfZF1RVjzheXIgxTa9O_08tCJqwugAGnA=="
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"createPlayer\",\n    \"id\": \"695d06fb-5772-452e-839e-4c808f0c4d57\"\n}"
+						}
+					]
+				},
+				{
+					"name": "/player",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{rootUrl}}/player",
+							"host": [
+								"{{rootUrl}}"
+							],
+							"path": [
+								"player"
+							]
+						},
+						"description": "/player"
+					},
+					"response": [
+						{
+							"name": "/player",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://2qa6k795bg.execute-api.ap-southeast-1.amazonaws.com/v1/api/player",
+									"protocol": "https",
+									"host": [
+										"2qa6k795bg",
+										"execute-api",
+										"ap-southeast-1",
+										"amazonaws",
+										"com"
+									],
+									"path": [
+										"v1",
+										"api",
+										"player"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "703"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 26 Oct 2020 09:21:29 GMT"
+								},
+								{
+									"key": "x-amzn-RequestId",
+									"value": "b864771d-4589-4443-9b4b-ae41746c87c6"
+								},
+								{
+									"key": "x-amz-apigw-id",
+									"value": "VAw7dF8hSQ0Fn0w="
+								},
+								{
+									"key": "X-Amzn-Trace-Id",
+									"value": "Root=1-5f969516-3e89643b09ceab8b3a32514a;Sampled=0"
+								},
+								{
+									"key": "X-Cache",
+									"value": "Miss from cloudfront"
+								},
+								{
+									"key": "Via",
+									"value": "1.1 1969b693060171ec284d3d0f19afb534.cloudfront.net (CloudFront)"
+								},
+								{
+									"key": "X-Amz-Cf-Pop",
+									"value": "HKG62-C2"
+								},
+								{
+									"key": "X-Amz-Cf-Id",
+									"value": "VCzoBfBBRlpWyjANqYC0fGX_5NJ8_aO9wOSHu_2R5yEplPCI_BUVeg=="
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"getPlayers\",\n    \"players\": [\n        {\n            \"playerName\": \"test\",\n            \"createdAt\": 1603704073466,\n            \"id\": \"695d06fb-5772-452e-839e-4c808f0c4d57\",\n            \"points\": 100,\n            \"updatedAt\": 1603704073466\n        },\n        {\n            \"playerName\": \"test123\",\n            \"createdAt\": 1603702725714,\n            \"id\": \"416ce5ef-37c3-4272-8c20-52c24626489c\",\n            \"points\": 500,\n            \"updatedAt\": 1603702725714\n        },\n        {\n            \"playerName\": \"test\",\n            \"createdAt\": 1603702038637,\n            \"id\": \"5be1928b-1dd0-4c77-8443-38bee9d58c0d\",\n            \"points\": 100,\n            \"updatedAt\": 1603702038637\n        },\n        {\n            \"playerName\": \"test2\",\n            \"createdAt\": 1603702042400,\n            \"id\": \"89d7898e-a3a6-4a81-881c-eb8e49278da2\",\n            \"points\": 100.222,\n            \"updatedAt\": 1603702042400\n        },\n        {\n            \"playerName\": \"test3\",\n            \"createdAt\": 1603702684559,\n            \"id\": \"30d99aea-5f96-4a45-8aa5-7fec4bbbb89e\",\n            \"points\": 333.21,\n            \"updatedAt\": 1603702684559\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "/player/{id}",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{rootUrl}}/player/bde92a3a-63ac-4820-89fe-746057f3bb62",
+							"host": [
+								"{{rootUrl}}"
+							],
+							"path": [
+								"player",
+								"bde92a3a-63ac-4820-89fe-746057f3bb62"
+							]
+						},
+						"description": "/player/{id}"
+					},
+					"response": [
+						{
+							"name": "/player/{id}",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://2qa6k795bg.execute-api.ap-southeast-1.amazonaws.com/v1/api/player/bde92a3a-63ac-4820-89fe-746057f3bb62",
+									"protocol": "https",
+									"host": [
+										"2qa6k795bg",
+										"execute-api",
+										"ap-southeast-1",
+										"amazonaws",
+										"com"
+									],
+									"path": [
+										"v1",
+										"api",
+										"player",
+										"bde92a3a-63ac-4820-89fe-746057f3bb62"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "177"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 22 Nov 2020 08:09:37 GMT"
+								},
+								{
+									"key": "x-amzn-RequestId",
+									"value": "3efcc407-3a32-4fee-bd12-80d9fa60bad2"
+								},
+								{
+									"key": "x-amz-apigw-id",
+									"value": "WZltuFjMSQ0Fs7g="
+								},
+								{
+									"key": "X-Amzn-Trace-Id",
+									"value": "Root=1-5fba1cbe-34aab29a6beff52a61e58266;Sampled=0"
+								},
+								{
+									"key": "X-Cache",
+									"value": "Miss from cloudfront"
+								},
+								{
+									"key": "Via",
+									"value": "1.1 69b8510b9be29c1f776639b7e7318dac.cloudfront.net (CloudFront)"
+								},
+								{
+									"key": "X-Amz-Cf-Pop",
+									"value": "HKG60-C1"
+								},
+								{
+									"key": "X-Amz-Cf-Id",
+									"value": "wGdeWWBzC3fKVlWMQVR4rntfuv2BtuZ4WF0lDT1qTJOnTJEQ_0HPZQ=="
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"getPlayerById\",\n    \"player\": {\n        \"playerName\": \"new player\",\n        \"createdAt\": 1603704297085,\n        \"id\": \"bde92a3a-63ac-4820-89fe-746057f3bb62\",\n        \"points\": 500.555,\n        \"updatedAt\": 1604409871746\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "/player/{id}",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"playerName\": \"new player\",\n    \"points\": 500.555\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{rootUrl}}/player/695d06fb-5772-452e-839e-4c808f0c4d57",
+							"host": [
+								"{{rootUrl}}"
+							],
+							"path": [
+								"player",
+								"695d06fb-5772-452e-839e-4c808f0c4d57"
+							]
+						},
+						"description": "/player/{id}"
+					},
+					"response": [
+						{
+							"name": "/player/{id}",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"playerName\": \"new player\",\n    \"points\": 500.555\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://2qa6k795bg.execute-api.ap-southeast-1.amazonaws.com/v1/api/player/695d06fb-5772-452e-839e-4c808f0c4d57",
+									"protocol": "https",
+									"host": [
+										"2qa6k795bg",
+										"execute-api",
+										"ap-southeast-1",
+										"amazonaws",
+										"com"
+									],
+									"path": [
+										"v1",
+										"api",
+										"player",
+										"695d06fb-5772-452e-839e-4c808f0c4d57"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "30"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 26 Oct 2020 09:25:33 GMT"
+								},
+								{
+									"key": "x-amzn-RequestId",
+									"value": "8212f977-fd5e-4735-bbc4-207f101b22ed"
+								},
+								{
+									"key": "x-amz-apigw-id",
+									"value": "VAxhmHgwyQ0FuPQ="
+								},
+								{
+									"key": "X-Amzn-Trace-Id",
+									"value": "Root=1-5f96960a-1d5509853bc7e50525f22ca6;Sampled=0"
+								},
+								{
+									"key": "X-Cache",
+									"value": "Miss from cloudfront"
+								},
+								{
+									"key": "Via",
+									"value": "1.1 1969b693060171ec284d3d0f19afb534.cloudfront.net (CloudFront)"
+								},
+								{
+									"key": "X-Amz-Cf-Pop",
+									"value": "HKG62-C2"
+								},
+								{
+									"key": "X-Amz-Cf-Id",
+									"value": "Wn6GHyJ8w3KEq18K-4F3HHpVNwoBz1ZN7xuCb_RQBWD49s-bonor4g=="
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"updatePlayerById\"\n}"
+						}
+					]
+				},
+				{
+					"name": "/player/{id}",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{rootUrl}}/player/695d06fb-5772-452e-839e-4c808f0c4d57",
+							"host": [
+								"{{rootUrl}}"
+							],
+							"path": [
+								"player",
+								"695d06fb-5772-452e-839e-4c808f0c4d57"
+							]
+						},
+						"description": "/player/{id}"
+					},
+					"response": [
+						{
+							"name": "/player/{id}",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://2qa6k795bg.execute-api.ap-southeast-1.amazonaws.com/v1/api/player/695d06fb-5772-452e-839e-4c808f0c4d57",
+									"protocol": "https",
+									"host": [
+										"2qa6k795bg",
+										"execute-api",
+										"ap-southeast-1",
+										"amazonaws",
+										"com"
+									],
+									"path": [
+										"v1",
+										"api",
+										"player",
+										"695d06fb-5772-452e-839e-4c808f0c4d57"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "30"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 26 Oct 2020 09:25:44 GMT"
+								},
+								{
+									"key": "x-amzn-RequestId",
+									"value": "ad799bb4-4ca3-4df6-bf9b-ecd828ec5dc5"
+								},
+								{
+									"key": "x-amz-apigw-id",
+									"value": "VAxjRETpSQ0Femw="
+								},
+								{
+									"key": "X-Amzn-Trace-Id",
+									"value": "Root=1-5f969614-6d55216e02ece3f373786287;Sampled=0"
+								},
+								{
+									"key": "X-Cache",
+									"value": "Miss from cloudfront"
+								},
+								{
+									"key": "Via",
+									"value": "1.1 1969b693060171ec284d3d0f19afb534.cloudfront.net (CloudFront)"
+								},
+								{
+									"key": "X-Amz-Cf-Pop",
+									"value": "HKG62-C2"
+								},
+								{
+									"key": "X-Amz-Cf-Id",
+									"value": "V34WnoRqIoJxnM3Kc1pHkIXOfrlVbtN2Zci_6ob5eo5M5UT5S_SaQQ=="
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"deletePlayerById\"\n}"
+						}
+					]
+				}
+			],
+			"description": "player",
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
