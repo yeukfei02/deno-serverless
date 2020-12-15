@@ -1,11 +1,11 @@
 service: deno-serverless
 
-frameworkVersion: '2'
+frameworkVersion: "2"
 
 provider:
   name: aws
   runtime: provided
-  stage: v1
+  stage: dev
   region: ap-southeast-1
   iamRoleStatements:
     - Effect: "Allow"
@@ -35,7 +35,7 @@ functions:
       - http:
           path: /api
           method: get
-  
+
   createPlayer:
     handler: src/createPlayer/handler.createPlayer
     layers:
@@ -53,7 +53,7 @@ functions:
       - http:
           path: /api/player
           method: get
-  
+
   getPlayerById:
     handler: src/getPlayerById/handler.getPlayerById
     layers:
@@ -90,7 +90,7 @@ resources:
         Location:
           ApplicationId: arn:aws:serverlessrepo:us-east-1:390065572566:applications/deno
           SemanticVersion: 1.4.6
-    
+
     playersTable:
       Type: AWS::DynamoDB::Table
       Properties:
