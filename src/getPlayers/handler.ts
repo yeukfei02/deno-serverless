@@ -17,6 +17,14 @@ export const getPlayers = async (event: APIGatewayProxyEvent) => {
         players: playersList,
       }),
     };
+  } else {
+    response = {
+      statusCode: 200,
+      body: JSON.stringify({
+        message: "getPlayers",
+        players: [],
+      }),
+    };
   }
 
   return response;

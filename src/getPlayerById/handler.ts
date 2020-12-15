@@ -21,6 +21,14 @@ export const getPlayerById = async (event: APIGatewayProxyEvent) => {
           }),
         };
       }
+    } else {
+      response = {
+        statusCode: 200,
+        body: JSON.stringify({
+          message: "getPlayerById",
+          player: {},
+        }),
+      };
     }
   }
 
