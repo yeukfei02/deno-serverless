@@ -5,7 +5,7 @@ frameworkVersion: "2"
 provider:
   name: aws
   runtime: provided
-  stage: dev
+  stage: prod
   region: ap-southeast-1
   iamRoleStatements:
     - Effect: "Allow"
