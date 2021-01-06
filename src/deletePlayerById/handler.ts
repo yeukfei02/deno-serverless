@@ -1,7 +1,14 @@
-import { APIGatewayProxyEvent } from "https://deno.land/x/lambda/mod.ts";
+import {
+  APIGatewayProxyEvent,
+  APIGatewayProxyResult,
+  Context,
+} from "https://deno.land/x/lambda/mod.ts";
 import { deletePlayerByIdModel } from "../../model/deletePlayerById.ts";
 
-export const deletePlayerById = async (event: APIGatewayProxyEvent) => {
+export const deletePlayerById = async (
+  event: APIGatewayProxyEvent,
+  context: Context
+): Promise<APIGatewayProxyResult> => {
   let response = {};
 
   if (event.pathParameters) {
