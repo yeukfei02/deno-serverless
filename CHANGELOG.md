@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.6](https://github.com/yeukfei02/deno-serverless/compare/v0.1.5...v0.1.6) (2021-01-06)
+
+
+### Features
+
+* 🎸 add .github folder ([603d275](https://github.com/yeukfei02/deno-serverless/commit/603d275fa47988f0a293bbdb21861cedf1b58a20))
+
+
+### Bug Fixes
+
+* 🐛 update sls lib ([c2d01a9](https://github.com/yeukfei02/deno-serverless/commit/c2d01a916d401e359f3af9d83fdf892398726da0))
+
 ### [0.1.5](https://github.com/yeukfei02/deno-serverless/compare/v0.1.4...v0.1.5) (2020-12-15)
 
 
