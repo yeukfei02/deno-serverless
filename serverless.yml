@@ -1,12 +1,16 @@
 service: deno-serverless
 
 frameworkVersion: "2"
+useDotEnv: true
 
 provider:
   name: aws
   runtime: provided
   stage: dev
   region: ap-southeast-1
+  tracing:
+    apiGateway: true
+    lambda: true
   iamRoleStatements:
     - Effect: "Allow"
       Action:
@@ -18,6 +22,9 @@ provider:
         - dynamodb:DeleteItem
       Resource:
         - Fn::GetAtt: [playersTable, Arn]
+  apiGateway:
+    shouldStartNameWithService: true
+  lambdaHashingVersion: 20201221
 
 package:
   exclude:
