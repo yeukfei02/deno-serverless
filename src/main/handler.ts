@@ -1,13 +1,9 @@
 import {
   APIGatewayProxyEvent,
-  APIGatewayProxyResult,
   Context,
 } from "https://deno.land/x/lambda/mod.ts";
 
-export const main = async (
-  event: APIGatewayProxyEvent,
-  context: Context
-): Promise<APIGatewayProxyResult> => {
+export const main = async (event: APIGatewayProxyEvent, context: Context) => {
   const response = {
     statusCode: 200,
     body: JSON.stringify({

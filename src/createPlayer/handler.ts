@@ -1,6 +1,5 @@
 import {
   APIGatewayProxyEvent,
-  APIGatewayProxyResult,
   Context,
 } from "https://deno.land/x/lambda/mod.ts";
 import { uuid } from "https://deno.land/x/uuid/mod.ts";
@@ -9,7 +8,7 @@ import { createPlayerModel } from "../../model/createPlayer.ts";
 export const createPlayer = async (
   event: APIGatewayProxyEvent,
   context: Context
-): Promise<APIGatewayProxyResult> => {
+) => {
   let response = {};
 
   if (event.body) {
