@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.7](https://github.com/yeukfei02/deno-serverless/compare/v0.1.6...v0.1.7) (2021-01-06)
+
+
+### Bug Fixes
+
+* 🐛 fix lambda func param ([7724b43](https://github.com/yeukfei02/deno-serverless/commit/7724b4346ac8cba4e4de86b78d327a932c092110))
+
 ### [0.1.6](https://github.com/yeukfei02/deno-serverless/compare/v0.1.5...v0.1.6) (2021-01-06)
 
 
