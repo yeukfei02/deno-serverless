@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.3.1](https://github.com/yeukfei02/deno-serverless/compare/v0.1.9...v0.3.1) (2021-01-07)
+
+
+### Bug Fixes
+
+* 🐛 fix useDotenv ([eab556d](https://github.com/yeukfei02/deno-serverless/commit/eab556d8df94c1f4dd7ad9b024327f054312fc33))
+
 ### [0.1.9](https://github.com/yeukfei02/deno-serverless/compare/v0.1.8...v0.1.9) (2021-01-07)
 
 
