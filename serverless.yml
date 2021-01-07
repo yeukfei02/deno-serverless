@@ -25,7 +25,7 @@ provider:
         - Fn::GetAtt: [playersTable, Arn]
   apiGateway:
     shouldStartNameWithService: true
-    description: deno serverless dev
+    description: deno serverless prod
   lambdaHashingVersion: 20201221
 
 package:
