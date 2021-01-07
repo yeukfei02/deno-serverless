@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.8](https://github.com/yeukfei02/deno-serverless/compare/v0.1.7...v0.1.8) (2021-01-07)
+
+
+### Bug Fixes
+
+* 🐛 fix return type ([d0e2736](https://github.com/yeukfei02/deno-serverless/commit/d0e27368995c00fdb1c04ab230031409acf58b9a))
+* 🐛 fix sls deploy error ([b957a18](https://github.com/yeukfei02/deno-serverless/commit/b957a18f7fbeec48391784a2865e2fa6d103b80b))
+
 ### [0.1.7](https://github.com/yeukfei02/deno-serverless/compare/v0.1.6...v0.1.7) (2021-01-06)
 
 
