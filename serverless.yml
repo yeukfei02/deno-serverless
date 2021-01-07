@@ -1,7 +1,7 @@
 service: deno-serverless
 
 frameworkVersion: "2"
-useDotEnv: true
+useDotenv: true
 
 provider:
   name: aws
@@ -25,6 +25,7 @@ provider:
         - Fn::GetAtt: [playersTable, Arn]
   apiGateway:
     shouldStartNameWithService: true
+    description: deno serverless dev
   lambdaHashingVersion: 20201221
 
 package:
