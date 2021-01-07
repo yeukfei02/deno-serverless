@@ -1,7 +1,7 @@
 service: deno-serverless
 
 frameworkVersion: "2"
-useDotEnv: true
+useDotenv: true
 
 provider:
   name: aws
