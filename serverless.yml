@@ -8,7 +8,7 @@ provider:
   runtime: provided
   stage: prod
   region: ap-southeast-1
-  apiName: deno-serverless-dev
+  apiName: deno-serverless-prod
   tracing:
     apiGateway: true
     lambda: true
