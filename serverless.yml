@@ -115,9 +115,13 @@ resources:
           WriteCapacityUnits: 1
 
 plugins:
+  - serverless-prune-plugin
   - serverless-plugin-split-stacks
   - serverless-scriptable-plugin
 
 custom:
   scriptHooks:
     before:package:createDeploymentArtifacts: DENO_DIR=.deno_dir deno cache src/**/*.ts && cp -R .deno_dir/gen/file/$PWD/ .deno_dir/LAMBDA_TASK_ROOT
+  prune:
+    automatic: true
+    number: 3
