@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.3.3](https://github.com/yeukfei02/deno-serverless/compare/v0.3.2...v0.3.3) (2021-01-22)
+
+
+### Features
+
+* 🎸 add package command ([c120274](https://github.com/yeukfei02/deno-serverless/commit/c12027426f4ec0f777ad3488691a631228f56013))
+* 🎸 add serverless-prune-plugin ([cdd27ef](https://github.com/yeukfei02/deno-serverless/commit/cdd27ef0cddd7c3481a1ae6648af8cbac865f6d8))
+
+
+### Bug Fixes
+
+* 🐛 update sls lib ([6adaed8](https://github.com/yeukfei02/deno-serverless/commit/6adaed837b864bdeb7c7dc96bda6150011d137ac))
+
 ### [0.3.2](https://github.com/yeukfei02/deno-serverless/compare/v0.3.1...v0.3.2) (2021-01-22)
 
 
