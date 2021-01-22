@@ -6,8 +6,9 @@
   "author": "Donald Wu <yeukfei02@gmail.com>",
   "license": "MIT",
   "devDependencies": {
+    "@types/serverless": "^1.78.20",
     "git-cz": "^4.7.1",
-    "serverless": "^2.20.0",
+    "serverless": "^2.20.1",
     "serverless-plugin-split-stacks": "^1.9.3",
     "serverless-prune-plugin": "^1.4.3",
     "serverless-scriptable-plugin": "^1.0.5",
