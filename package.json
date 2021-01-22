@@ -15,6 +15,7 @@
   },
   "scripts": {
     "deploy": "serverless deploy",
+    "package": "serverless package",
     "dashboard": "serverless dashboard",
     "test": "rm -rf node_modules && deno test",
     "commit": "git-cz",
