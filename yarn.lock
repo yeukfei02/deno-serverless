@@ -458,6 +458,11 @@
   dependencies:
     "@types/node" "*"
 
+"@types/serverless@^1.78.20":
+  version "1.78.20"
+  resolved "https://registry.yarnpkg.com/@types/serverless/-/serverless-1.78.20.tgz#f5b822722133e3b050bbdc7b840b9fa6ebf08edc"
+  integrity sha512-HMMKnOqcOR2Vo3IrSuJw+nZF+QtVOT0suIotl50PcHHThGINWJmQH/gWiU7lFGVjBSv+yUPJ/6MpYO1kycLHCw==
+
 "@types/tough-cookie@*":
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/@types/tough-cookie/-/tough-cookie-4.0.0.tgz#fef1904e4668b6e5ecee60c52cc6a078ffa6697d"
@@ -722,7 +727,7 @@ aws-info@^1.0.0:
   resolved "https://registry.yarnpkg.com/aws-info/-/aws-info-1.1.0.tgz#847b77824f98c96011b74c7f9436cb4823ec75c3"
   integrity sha512-ZUWFfYy9Mu5ppoDJr3TxY0UWc4peP3tS5sStgnKkRh3urYalQaZWHewhbDbz40I84PO0xhVdBGut1xQtjum3mw==
 
-aws-sdk@^2.829.0:
+aws-sdk@^2.830.0:
   version "2.830.0"
   resolved "https://registry.yarnpkg.com/aws-sdk/-/aws-sdk-2.830.0.tgz#1d3631d573d18c48373046da7ad92855a7fd1636"
   integrity sha512-vFatoWkdJmRzpymWbqsuwVsAJdhdAvU2JcM9jKRENTNKJw90ljnLyeP1eKCp4O3/4Lg43PVBwY/KUqPy4wL+OA==
@@ -4651,10 +4656,10 @@ serverless-scriptable-plugin@^1.0.5:
   dependencies:
     bluebird "3.7.2"
 
-serverless@^2.20.0:
-  version "2.20.0"
-  resolved "https://registry.yarnpkg.com/serverless/-/serverless-2.20.0.tgz#c44a0168e1795812906f069b5cab57f8fbecdee7"
-  integrity sha512-Uc+L9SBZCvV13WURF3UCOpzqW6QOoiPw02M6i3FAOBT7GHkcdLL5zztEKt7gedFQa/bIwk2MtnjMWonK/r59iw==
+serverless@^2.20.1:
+  version "2.20.1"
+  resolved "https://registry.yarnpkg.com/serverless/-/serverless-2.20.1.tgz#5aebd245e57dcd30d317e288d41d56f17e7d7b1a"
+  integrity sha512-V1cE8PJyMaBp9VfThLixWdHO5wAnPjYKFKhf5iqRLfDx9s/RYjQvd+XNdp+VzN0s5TuiT9gnlIURdvjhynF3bw==
   dependencies:
     "@serverless/cli" "^1.5.2"
     "@serverless/components" "^3.5.1"
@@ -4663,7 +4668,7 @@ serverless@^2.20.0:
     ajv "^6.12.6"
     ajv-keywords "^3.5.2"
     archiver "^5.2.0"
-    aws-sdk "^2.829.0"
+    aws-sdk "^2.830.0"
     bluebird "^3.7.2"
     boxen "^5.0.0"
     cachedir "^2.3.0"
