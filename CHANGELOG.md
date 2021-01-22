@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.3.2](https://github.com/yeukfei02/deno-serverless/compare/v0.3.1...v0.3.2) (2021-01-22)
+
+
+### Features
+
+* 🎸 update sls lib ([e4f43c9](https://github.com/yeukfei02/deno-serverless/commit/e4f43c9c15b19e55287c6b17050e9468eeb67891))
+
+
+### Bug Fixes
+
+* 🐛 add apiGateway description ([ea484ec](https://github.com/yeukfei02/deno-serverless/commit/ea484ecd9ca9489f881a1be67bbf1cdc09538030))
+* 🐛 fix apiGateway description in master ([d8d96c3](https://github.com/yeukfei02/deno-serverless/commit/d8d96c313c88fd902fa04ffb5a372bbb4faaed32))
+
 ### [0.3.1](https://github.com/yeukfei02/deno-serverless/compare/v0.1.9...v0.3.1) (2021-01-07)
 
 
