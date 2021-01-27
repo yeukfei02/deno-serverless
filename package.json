@@ -18,6 +18,7 @@
     "deploy": "serverless deploy",
     "package": "serverless package",
     "dashboard": "serverless dashboard",
+    "remove": "serverless remove",
     "test": "rm -rf node_modules && deno test",
     "commit": "git-cz",
     "release": "standard-version"
