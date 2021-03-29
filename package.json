@@ -6,8 +6,8 @@
   "author": "Donald Wu <yeukfei02@gmail.com>",
   "license": "MIT",
   "devDependencies": {
-    "@types/serverless": "^1.78.20",
     "git-cz": "^4.7.1",
+    "rimraf": "^3.0.2",
     "serverless": "^2.21.1",
     "serverless-plugin-split-stacks": "^1.9.3",
     "serverless-prune-plugin": "^1.4.3",
@@ -19,7 +19,7 @@
     "package": "serverless package",
     "dashboard": "serverless dashboard",
     "remove": "serverless remove",
-    "test": "rm -rf node_modules && deno test",
+    "test": "rimraf node_modules && deno test",
     "commit": "git-cz",
     "release": "standard-version"
   }
