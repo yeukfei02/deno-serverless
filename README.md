@@ -4,7 +4,7 @@ deno-serverless
 
 documentation: <https://documenter.getpostman.com/view/3827865/TVYF9eVi>
 
-api url: <https://3zw9wskhxf.execute-api.ap-southeast-1.amazonaws.com/prod/api>
+<!-- api url: <https://3zw9wskhxf.execute-api.ap-southeast-1.amazonaws.com/prod/api> -->
 
 ## Requirement
 
