@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.3.6](https://github.com/yeukfei02/deno-serverless/compare/v0.3.5...v0.3.6) (2021-07-31)
+
+
+### Bug Fixes
+
+* 🐛 comment api url ([9cc990f](https://github.com/yeukfei02/deno-serverless/commit/9cc990fa5d74896d59015d9eba984b33150db1bd))
+* 🐛 comment split stack plugin ([14ca562](https://github.com/yeukfei02/deno-serverless/commit/14ca56201ac71f061de8e3118b5c9cba1296a06a))
+* 🐛 fix readme.md ([07b970d](https://github.com/yeukfei02/deno-serverless/commit/07b970d5eed19402892924fcb132531e9def237e))
+* 🐛 update sls lib ([37daf41](https://github.com/yeukfei02/deno-serverless/commit/37daf41422676c7e81940cc5c4ff76a3515b0545))
+
 ### [0.3.5](https://github.com/yeukfei02/deno-serverless/compare/v0.3.4...v0.3.5) (2021-03-29)
 
 
