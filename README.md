@@ -9,7 +9,7 @@ api url: <https://lodbn4f4di.execute-api.ap-southeast-1.amazonaws.com/prod/api>
 ## Requirement
 
 - install yarn
-- install node (v12+)
+- install node (v14+)
 - install serverless
 - install deno
 
