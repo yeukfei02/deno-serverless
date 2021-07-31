@@ -8,7 +8,7 @@
   "devDependencies": {
     "git-cz": "^4.7.1",
     "rimraf": "^3.0.2",
-    "serverless": "^2.33.1",
+    "serverless": "^2.52.1",
     "serverless-plugin-split-stacks": "^1.9.3",
     "serverless-prune-plugin": "^1.4.3",
     "serverless-scriptable-plugin": "^1.0.5",

@@ -118,7 +118,7 @@ resources:
 
 plugins:
   - serverless-prune-plugin
-  - serverless-plugin-split-stacks
+  # - serverless-plugin-split-stacks
   - serverless-scriptable-plugin
 
 custom:
