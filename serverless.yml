@@ -29,6 +29,7 @@ provider:
     shouldStartNameWithService: true
     description: deno serverless prod
   lambdaHashingVersion: 20201221
+  timeout: 30
 
 package:
   exclude:
