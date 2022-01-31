@@ -6,13 +6,11 @@
   "author": "Donald Wu <yeukfei02@gmail.com>",
   "license": "MIT",
   "devDependencies": {
-    "git-cz": "^4.7.1",
+    "git-cz": "^4.8.0",
     "rimraf": "^3.0.2",
-    "serverless": "^2.52.1",
-    "serverless-plugin-split-stacks": "^1.9.3",
-    "serverless-prune-plugin": "^1.4.3",
-    "serverless-scriptable-plugin": "^1.0.5",
-    "standard-version": "^9.0.0"
+    "serverless": "2.72.2",
+    "serverless-scriptable-plugin": "^1.2.2",
+    "standard-version": "^9.3.2"
   },
   "scripts": {
     "deploy": "serverless deploy",
