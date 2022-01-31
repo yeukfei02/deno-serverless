@@ -117,8 +117,6 @@ resources:
           WriteCapacityUnits: 1
 
 plugins:
-  - serverless-prune-plugin
-  # - serverless-plugin-split-stacks
   - serverless-scriptable-plugin
 
 custom:
