@@ -2,6 +2,32 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.3.6](https://github.com/yeukfei02/deno-serverless/compare/v0.3.5...v0.3.6) (2021-07-31)
+
+
+### Bug Fixes
+
+* 🐛 comment api url ([9cc990f](https://github.com/yeukfei02/deno-serverless/commit/9cc990fa5d74896d59015d9eba984b33150db1bd))
+* 🐛 comment split stack plugin ([14ca562](https://github.com/yeukfei02/deno-serverless/commit/14ca56201ac71f061de8e3118b5c9cba1296a06a))
+* 🐛 fix readme.md ([07b970d](https://github.com/yeukfei02/deno-serverless/commit/07b970d5eed19402892924fcb132531e9def237e))
+* 🐛 update sls lib ([37daf41](https://github.com/yeukfei02/deno-serverless/commit/37daf41422676c7e81940cc5c4ff76a3515b0545))
+
+### [0.3.5](https://github.com/yeukfei02/deno-serverless/compare/v0.3.4...v0.3.5) (2021-03-29)
+
+
+### Features
+
+* 🎸 add github actions ([08efb2e](https://github.com/yeukfei02/deno-serverless/commit/08efb2eb24955e4fe1f2ae7f50bdecff48a11bda))
+
+
+### Bug Fixes
+
+* 🐛 add deno in github actions ([b1e5774](https://github.com/yeukfei02/deno-serverless/commit/b1e577409781ddfcfc401e8087750990e7716eb7))
+* 🐛 fix github actions ([9d860de](https://github.com/yeukfei02/deno-serverless/commit/9d860de4ed272e49fb2eb7a9fe61c492c291b94e))
+* 🐛 fix package.json ([e5edc04](https://github.com/yeukfei02/deno-serverless/commit/e5edc0457131d79ff9839cb458918e42198277ce))
+* 🐛 remove github actions ([23f2c32](https://github.com/yeukfei02/deno-serverless/commit/23f2c323fab02e2f8926eae8554445785071336e))
+* 🐛 update sls lib ([8053313](https://github.com/yeukfei02/deno-serverless/commit/805331366c682a38098e0d90e5722af2254a8687))
+
 ### [0.3.4](https://github.com/yeukfei02/deno-serverless/compare/v0.3.3...v0.3.4) (2021-01-27)
 
 
