@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.3.8](https://github.com/yeukfei02/deno-serverless/compare/v0.3.7...v0.3.8) (2022-03-18)
+
+
+### Bug Fixes
+
+* 🐛 add timeout ([235f17b](https://github.com/yeukfei02/deno-serverless/commit/235f17b39ee9684276806527b20a16465fa0fd47))
+* 🐛 update sls to v3 and remove postman collection ([cc38b83](https://github.com/yeukfei02/deno-serverless/commit/cc38b832255f3f3d7fc7cfb63000ae2d8a0c6413))
+* 🐛 update sls.yml ([c0b01d0](https://github.com/yeukfei02/deno-serverless/commit/c0b01d0020e6543b04e0f8515bc957f90e73bcca))
+
 ### [0.3.7](https://github.com/yeukfei02/deno-serverless/compare/v0.3.6...v0.3.7) (2022-01-31)
 
 
